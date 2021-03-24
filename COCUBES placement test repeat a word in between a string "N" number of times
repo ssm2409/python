@@ -1,12 +1,11 @@
-st="hello"
-key="S"
-no=5
+st="PANDAS"
+key="@"
+no=9
 k=list(st)
 keys=int(len(st)/2)
 new=[x for x in k[keys:len(st)]]
-xx=[x for x in k if x  not in new] 
+xx=list(st[0:keys])
 for i in range(0,no):
  xx.append(key)
-final=xx+new
-for i in final:
-    print(i,end="")    
+final=xx+new 
+print(*final,sep="")
